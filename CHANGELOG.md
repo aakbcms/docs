@@ -14,8 +14,8 @@
 This is changes in relation to DDB CMS (core) before this change log was started.
 
 ## Ding WAYF implementation
-* https://github.com/ding2/ding2/compare/master...aakbcms:feature/alma-wayf
-* https://github.com/ding2/ding2/compare/master...aakbcms:ddbasic-alma-wayf
+* https://github.com/ding2/ding2/compare/master...aakbcms:feature/alma-wayf.diff
+* https://github.com/ding2/ding2/compare/master...aakbcms:feature/ddbasic-alma-wayf.diff
 * https://github.com/ding2/ding2/compare/master...aakbcms:feature/ding_frontend-wayf.diff
 * http://github.com/aakbcms/ding_wayf_dk.git
 
