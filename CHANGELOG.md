@@ -48,5 +48,5 @@ __Note__: AAKB uses "WAYF" directly and not DBC's gate-wayf.
 
 ## Contribute modules:
 * imagemagick
-* override_node_options]
+* override_node_options
 * advuser
