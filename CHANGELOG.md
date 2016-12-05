@@ -1,7 +1,9 @@
 
 # Development
 
-* Currently no changes.
+* wget -qO - https://github.com/Arni/ding_loan/commit/b074e104798fe8d914e38860b0ce17aca792d107.diff | patch p1 -> https://itkdev.atlassian.net/browse/AAKBET-250 
+* wget -qO - wget -qO - https://patch-diff.githubusercontent.com/raw/ding2/ding2/pull/250.diff | patch -p1 -> https://itkdev.atlassian.net/browse/AAKBET-251
+
 
 # 2.5.1
 
