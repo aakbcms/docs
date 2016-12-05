@@ -5,6 +5,7 @@
 * wget -qO - wget -qO - https://patch-diff.githubusercontent.com/raw/ding2/ding2/pull/250.diff | patch -p1 -> https://itkdev.atlassian.net/browse/AAKBET-251
 * https://github.com/vejlebib/vejlebib_fbs
 * wget https://patch-diff.githubusercontent.com/raw/ding2/ding2/pull/381.patch && git apply 318.patch
+* wget https://patch-diff.githubusercontent.com/raw/ding2/ding2/pull/352.patch && git apply 352.patch
 
 # 2.5.1
 
