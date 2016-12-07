@@ -6,6 +6,7 @@
 * https://github.com/vejlebib/vejlebib_fbs
 * wget https://patch-diff.githubusercontent.com/raw/ding2/ding2/pull/381.patch && git apply 318.patch
 * wget https://patch-diff.githubusercontent.com/raw/ding2/ding2/pull/352.patch && git apply 352.patch
+* wget -qO - https://github.com/ding2/ding2/compare/master...aakbcms:feature/fbs-hackes.diff | patch -p1
 
 # 2.5.1
 
