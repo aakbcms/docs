@@ -9,6 +9,7 @@
 * wget -qO - https://github.com/ding2/ding2/compare/master...aakbcms:feature/fbs-hackes.diff | patch -p1
 * ting client - wget -qO - https://github.com/ding2/ting-client/compare/master...aakbcms:feature/holdingitems.diff | patch -p1
 * wget -qO - https://github.com/ding2/ding2/compare/master...aakbcms:feature/holdingitems.diff | patch -p1
+* wget -qO - https://github.com/ding2/ding2/compare/master...aakbcms:feature/fbs-theme.diff | patch -p1
 
 # 2.5.1
 
