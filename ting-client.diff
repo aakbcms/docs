@@ -1,4 +1,4 @@
---- modules/ting/ting.client.inc        2017-03-16 21:52:16.000000000 +0100
+--- modules/ting/ting.client.inc     2017-03-16 21:52:16.000000000 +0100
 +++ modules/ting/ting.client.inc     2017-02-27 16:29:53.407458777 +0100
 @@ -231,7 +243,12 @@
    if ($agency && variable_get('ting_filter_by_local_holdings', 0)) {
@@ -7,7 +7,7 @@
 -    $query = '(' . $query . ') and holdingsitem.agencyid="' . $agency . '"';
 +//    $query = '(' . $query . ') and holdingsitem.agencyid="' . $agency . '"';
 +
-+     // handle exclude branch in search
++     // Handle exclude branch in search.
 +
 +     $filterholdings = variable_get('ting_sgl_cql_suffix', '');
 +     $query = $query . ' and holdingsitem.agencyid="' . $agency . '" ' . $filterholdings;

@@ -1,15 +1,27 @@
 
 # Development
 
-* wget -qO - https://github.com/Arni/ding_loan/commit/b074e104798fe8d914e38860b0ce17aca792d107.diff | patch p1 -> https://itkdev.atlassian.net/browse/AAKBET-250 
-* wget -qO - wget -qO - https://patch-diff.githubusercontent.com/raw/ding2/ding2/pull/250.diff | patch -p1 -> https://itkdev.atlassian.net/browse/AAKBET-251
-* https://github.com/vejlebib/vejlebib_fbs
-* wget https://patch-diff.githubusercontent.com/raw/ding2/ding2/pull/381.patch && git apply 318.patch
-* wget https://patch-diff.githubusercontent.com/raw/ding2/ding2/pull/352.patch && git apply 352.patch
-* wget -qO - https://github.com/ding2/ding2/compare/master...aakbcms:feature/fbs-hackes.diff | patch -p1
-* ting client - wget -qO - https://github.com/ding2/ting-client/compare/master...aakbcms:feature/holdingitems.diff | patch -p1
-* wget -qO - https://github.com/ding2/ding2/compare/master...aakbcms:feature/holdingitems.diff | patch -p1
-* wget -qO - https://github.com/ding2/ding2/compare/master...aakbcms:feature/fbs-theme.diff | patch -p1
+# 3.0.2
+
+## Patches:
+
+### Du kan først forny dine lån 7 dage før de udløber, og højst to gange i alt
+	* wget -qO - https://github.com/Arni/ding_loan/commit/b074e104798fe8d914e38860b0ce17aca792d107.diff | patch p1 -> https://itkdev.atlassian.net/browse/AAKBET-250
+
+### FBS - Ingen opstilling med DK-5 signatur eller inverteret forfatternavn
+	* wget https://patch-diff.githubusercontent.com/raw/ding2/ding2/pull/552.patch && git apply 552.patch
+	* wget https://patch-diff.githubusercontent.com/raw/ding2/ding2/pull/21.patch && git apply 21.patch
+
+### Filtrering på branch, availability, holdings
+	* wget -qO - https://github.com/ding2/ding2/compare/7.x-3.0.2...aakbcms:feature/fbs-hackes.diff | patch -p1
+
+### FBS - alle manifestationer på tværs af agencies vises i værkvisningen på trods af holdingsItem.agency
+	* ting client ->>>> wget -qO - https://github.com/ding2/ting-client/compare/master...aakbcms:feature/holdingitems.diff | patch -p1
+	* wget -qO - https://github.com/ding2/ding2/compare/7.x-3.0.2...aakbcms:feature/holdingitems.diff | patch -p1
+
+Fjernlån. Lånserstatus - titlen kan ikke vises testet og godkendt (Lene) - http://platform.dandigbib.org/issues/1270
+	* wget https://patch-diff.githubusercontent.com/raw/ding2/ding2/pull/352.patch && git apply 352.patch
+
 
 # 2.5.1
 
@@ -22,26 +34,26 @@
 This is changes in relation to DDB CMS (core) before this change log was started.
 
 ## Ding WAYF implementation
-* https://github.com/ding2/ding2/compare/master...aakbcms:feature/alma-wayf.diff
-* https://github.com/ding2/ding2/compare/master...aakbcms:feature/ddbasic-wayf.diff
-* https://github.com/ding2/ding2/compare/master...aakbcms:feature/ding_frontend-wayf.diff
+* https://github.com/ding2/ding2/compare/7.x-2.5.1...aakbcms:feature/alma-wayf.diff
+* https://github.com/ding2/ding2/compare/7.x-2.5.1...aakbcms:feature/ddbasic-wayf.diff
+* https://github.com/ding2/ding2/compare/7.x-2.5.1...aakbcms:feature/ding_frontend-wayf.diff
 * http://github.com/aakbcms/ding_wayf_dk.git
 
 __Note__: AAKB uses "WAYF" directly and not DBC's gate-wayf.
 
 ## Opening hours
-* https://github.com/ding2/ding2/compare/master...aakbcms:feature/ddbasic-opening-hours.diff'
-* https://github.com/ding2/ding2/compare/master...aakbcms:feature/ding_library-opening-hours.diff
+* https://github.com/ding2/ding2/compare/7.x-2.5.1...aakbcms:feature/ddbasic-opening-hours.diff'
+* https://github.com/ding2/ding2/compare/7.x-2.5.1...aakbcms:feature/ding_library-opening-hours.diff
 * https://www.drupal.org/files/issues/opening_hours-view_modes-2607314-6.patch
 
 
 ## Different permission changes:
-* https://github.com/ding2/ding2/compare/master...aakbcms:feature/ding_perm-override-node.diff
-* https://github.com/ding2/ding2/compare/master...aakbcms:feature/ding_perm-adv-user.diff
-* https://github.com/ding2/ding2/compare/master...aakbcms:feature/ding_perm-aakb-survey.diff
+* https://github.com/ding2/ding2/compare/7.x-2.5.1...aakbcms:feature/ding_perm-override-node.diff
+* https://github.com/ding2/ding2/compare/7.x-2.5.1...aakbcms:feature/ding_perm-adv-user.diff
+* https://github.com/ding2/ding2/compare/7.x-2.5.1...aakbcms:feature/ding_perm-aakb-survey.diff
 
 ## Aakb survery
-* https://github.com/ding2/ding2/compare/master...aakbcms:feature/ding_user_frontend-aakb_survey.diff
+* https://github.com/ding2/ding2/compare/7.x-2.5.1...aakbcms:feature/ding_user_frontend-aakb_survey.diff
 * http://github.com/aakbcms/aakb_survey.git
 
 ## Other changes
