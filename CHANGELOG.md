@@ -3,23 +3,23 @@
 
 # 3.0.2
 
-## Patches:
+### Patches:
 
-### Du kan først forny dine lån 7 dage før de udløber, og højst to gange i alt
+#### Du kan først forny dine lån 7 dage før de udløber, og højst to gange i alt
 	* wget -qO - https://github.com/Arni/ding_loan/commit/b074e104798fe8d914e38860b0ce17aca792d107.diff | patch p1 -> https://itkdev.atlassian.net/browse/AAKBET-250
 
-### FBS - Ingen opstilling med DK-5 signatur eller inverteret forfatternavn
+#### FBS - Ingen opstilling med DK-5 signatur eller inverteret forfatternavn
 	* wget https://patch-diff.githubusercontent.com/raw/ding2/ding2/pull/552.patch && git apply 552.patch
 	* wget https://patch-diff.githubusercontent.com/raw/ding2/ding2/pull/21.patch && git apply 21.patch
 
-### Filtrering på branch, availability, holdings
+#### Filtrering på branch, availability, holdings
 	* wget -qO - https://github.com/ding2/ding2/compare/7.x-3.0.2...aakbcms:feature/fbs-hackes.diff | patch -p1
 
-### FBS - alle manifestationer på tværs af agencies vises i værkvisningen på trods af holdingsItem.agency
+#### FBS - alle manifestationer på tværs af agencies vises i værkvisningen på trods af holdingsItem.agency
 	* ting client ->>>> wget -qO - https://github.com/ding2/ting-client/compare/master...aakbcms:feature/holdingitems.diff | patch -p1
 	* wget -qO - https://github.com/ding2/ding2/compare/7.x-3.0.2...aakbcms:feature/holdingitems.diff | patch -p1
 
-### Fjernlån. Lånserstatus - titlen kan ikke vises testet og godkendt (Lene) - http://platform.dandigbib.org/issues/1270
+#### Fjernlån. Lånserstatus - titlen kan ikke vises - issue 1270
 	* wget https://patch-diff.githubusercontent.com/raw/ding2/ding2/pull/352.patch && git apply 352.patch
 
 ### Handle exclude branch in search
