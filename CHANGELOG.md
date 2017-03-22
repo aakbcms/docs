@@ -10,7 +10,7 @@
 
 #### FBS - Ingen opstilling med DK-5 signatur eller inverteret forfatternavn (I MAKE)
 	* wget https://patch-diff.githubusercontent.com/raw/ding2/ding2/pull/552.patch && git apply 552.patch
-	* wget https://patch-diff.githubusercontent.com/raw/ding2/ding2/pull/21.patch && git apply 21.patch
+	* wget https://patch-diff.githubusercontent.com/raw/ding2/ting-client/pull/21.patch && git apply 21.patch
 
 #### Filtrering på branch, availability, holdings (I MAKE)
 	* wget -qO - https://github.com/ding2/ding2/compare/7.x-3.0.2...aakbcms:feature/fbs-hackes.diff | patch -p1
