@@ -1,7 +1,15 @@
 
 # Development
 
-* Currently no changes.
+* wget -qO - https://github.com/Arni/ding_loan/commit/b074e104798fe8d914e38860b0ce17aca792d107.diff | patch p1 -> https://itkdev.atlassian.net/browse/AAKBET-250 
+* wget -qO - wget -qO - https://patch-diff.githubusercontent.com/raw/ding2/ding2/pull/250.diff | patch -p1 -> https://itkdev.atlassian.net/browse/AAKBET-251
+* https://github.com/vejlebib/vejlebib_fbs
+* wget https://patch-diff.githubusercontent.com/raw/ding2/ding2/pull/381.patch && git apply 318.patch
+* wget https://patch-diff.githubusercontent.com/raw/ding2/ding2/pull/352.patch && git apply 352.patch
+* wget -qO - https://github.com/ding2/ding2/compare/master...aakbcms:feature/fbs-hackes.diff | patch -p1
+* ting client - wget -qO - https://github.com/ding2/ting-client/compare/master...aakbcms:feature/holdingitems.diff | patch -p1
+* wget -qO - https://github.com/ding2/ding2/compare/master...aakbcms:feature/holdingitems.diff | patch -p1
+* wget -qO - https://github.com/ding2/ding2/compare/master...aakbcms:feature/fbs-theme.diff | patch -p1
 
 # 2.5.1
 
