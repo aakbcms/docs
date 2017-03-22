@@ -19,9 +19,78 @@
 	* ting client ->>>> wget -qO - https://github.com/ding2/ting-client/compare/master...aakbcms:feature/holdingitems.diff | patch -p1
 	* wget -qO - https://github.com/ding2/ding2/compare/7.x-3.0.2...aakbcms:feature/holdingitems.diff | patch -p1
 
-Fjernlån. Lånserstatus - titlen kan ikke vises testet og godkendt (Lene) - http://platform.dandigbib.org/issues/1270
+### Fjernlån. Lånserstatus - titlen kan ikke vises testet og godkendt (Lene) - http://platform.dandigbib.org/issues/1270
 	* wget https://patch-diff.githubusercontent.com/raw/ding2/ding2/pull/352.patch && git apply 352.patch
 
+### Handle exclude branch in search
+	* wget -qO - https://raw.githubusercontent.com/aakbcms/docs/master/ting-client.diff | patch -p1
+
+## Manual changes:
+
+### Frontpage panels
+```
+>               'new-9e020af4-9b1a-4a09-aae4-6e5614313c53' => array(
+>                 'pid' => 'new-9e020af4-9b1a-4a09-aae4-6e5614313c53',
+>                 'panel' => 'tertiary',
+>                 'type' => 'node',
+>                 'subtype' => 'node',
+>                 'shown' => TRUE,
+>                 'access' => array(),
+>                 'configuration' => array(
+>                   'nid' => 12361,
+>                   'links' => 1,
+>                   'leave_node_title' => 0,
+>                   'identifier' => '',
+>                   'build_mode' => 'teaser',
+>                   'link_node_title' => 0,
+>                   'override_title' => 0,
+>                   'override_title_text' => '',
+>                   'override_title_heading' => 'h2',
+>                 ),
+>                 'cache' => array(),
+>                 'style' => array(
+>                   'settings' => NULL,
+>                 ),
+>                 'css' => array(
+>                   'css_id' => '',
+>                   'css_class' => 'important-news',
+>                 ),
+>                 'extras' => array(),
+>                 'position' => 0,
+>                 'locks' => array(),
+>                 'uuid' => '9e020af4-9b1a-4a09-aae4-6e5614313c53',
+                ),
+```
+
+### Style changes
+```
+.front .tertiary-content .important-news,
+.front .tertiary-content .important-news .pane-title {
+  margin-bottom: 10px;
+}
+
+.front .tertiary-content .important-news .pane-content {
+  background-color: #fff7b5;
+}
+
+.front .tertiary-content .important-news .page-lead {
+  font-family: SourceSansProRegular;
+  padding: 10px;
+}
+
+.front .tertiary-content .important-news .node-readmore {
+  text-align: right;
+  padding-right: 10px;
+  padding-bottom: 10px;
+}
+
+.front .tertiary-content .important-news .page-title,
+.front .tertiary-content .important-news .page-image,
+.front .tertiary-content .important-news .super-heading {
+  display: none;
+  padding: 0;
+}
+```
 
 # 2.5.1
 
