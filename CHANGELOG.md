@@ -3,6 +3,8 @@
 
 # 3.0.2
 
+* Change WAYF to use GateWAYF modules
+
 ### Patches:
 
 #### Du kan først forny dine lån 7 dage før de udløber, og højst to gange i alt
