@@ -64,6 +64,9 @@
 
 ### Style changes
 ```
+/**
+ * Front-page news
+ */
 .front .tertiary-content .important-news,
 .front .tertiary-content .important-news .pane-title {
   margin-bottom: 10px;
@@ -89,6 +92,21 @@
 .front .tertiary-content .important-news .super-heading {
   display: none;
   padding: 0;
+}
+```
+### P2 Remove padding on front-page ()
+```
+.pane-serendipity-ting-object {
+    background-color: #ffffff;
+    padding-top: 20px;
+--    padding-right: 20px;
+    padding-bottom: 10px;
+--    padding-left: 20px;
+    margin-bottom: 20px;
+    
+    pane-title {
+      padding-right: 20px;
+    }
 }
 ```
 
