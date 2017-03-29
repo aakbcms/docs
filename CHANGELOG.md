@@ -3,7 +3,8 @@
 
 # 3.0.2
 
-* Change WAYF to use GateWAYF modules
+* Change WAYF to use GateWAYF modules.
+* Tilføj "Aakb survey consent" to user panel.
 
 ### Patches:
 
@@ -94,6 +95,15 @@
 .front .tertiary-content .important-news .super-heading {
   display: none;
   padding: 0;
+}
+
+.page-user- .pane-content .pane-provider {
+  float: left;
+  width: 66.66667%;
+  margin-left: 25%;
+  padding-left: 10px;
+  padding-right: 10px;
+  margin-bottom: 20px;
 }
 ```
 ### P2 Remove padding on front-page ()
