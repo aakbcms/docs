@@ -109,6 +109,10 @@
 .page-user- .pane-content .ding-user-lists ul {
   margin-bottom: 20px;
 }
+
+.page-user- .pane-content .ding-user-lists h3 {
+  font-size: 180%;
+}
 ```
 
 ### P2 Remove padding on front-page ()
