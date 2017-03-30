@@ -105,7 +105,12 @@
   padding-right: 10px;
   margin-bottom: 20px;
 }
+
+.page-user- .pane-content .ding-user-lists ul {
+  margin-bottom: 20px;
+}
 ```
+
 ### P2 Remove padding on front-page ()
 ```
 .pane-serendipity-ting-object {
