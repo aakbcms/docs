@@ -1,6 +1,8 @@
 
 # Development
 
+Kvikfix: roller ændret til 3,6 istedet for 7,8 i ding_staff.views_default.inc fra linje 973 og frem
+
 # 3.0.2
 
 * Change WAYF to use GateWAYF modules.
