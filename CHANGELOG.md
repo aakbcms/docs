@@ -1,7 +1,7 @@
 
 # Development
 
-Kvikfix: roller ændret til 3,6 istedet for 7,8 i ding_staff.views_default.inc fra linje 973 og frem
+Kvikfix: roller ændret til 3,6 istedet for 7,8 i ding_staff.views_default.inc fra linje 973 og frem, jf  http://platform.dandigbib.org/issues/2014
 
 # 3.0.2
 
